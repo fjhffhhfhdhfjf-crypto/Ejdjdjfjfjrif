@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "customtitlescreen",
+  "version": "${version}",
+  "name": "Custom Season/Time Title Screen",
+  "description": "Replaces the main menu with a custom screen featuring a season and time-of-day selector.",
+  "authors": ["you"],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.customtitlescreen.client.CustomTitleScreenModClient"
+    ]
+  },
+  "mixins": [
+    "customtitlescreen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
